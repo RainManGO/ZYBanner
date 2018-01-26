@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A45D021201AD4D400FE2BF3 /* AutoBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A45D020201AD4D400FE2BF3 /* AutoBannerView.m */; };
+		2A45D029201B213E00FE2BF3 /* AutoBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A45D028201B213E00FE2BF3 /* AutoBannerCell.m */; };
+		2A45D02F201B3CF500FE2BF3 /* AutoBannerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A45D02E201B3CF500FE2BF3 /* AutoBannerLayout.m */; };
 		2A6AA3022019CF7900810988 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6AA3012019CF7900810988 /* AppDelegate.m */; };
 		2A6AA3052019CF7900810988 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6AA3042019CF7900810988 /* ViewController.m */; };
 		2A6AA3082019CF7900810988 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6AA3062019CF7900810988 /* Main.storyboard */; };
@@ -16,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A45D01F201AD4D400FE2BF3 /* AutoBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoBannerView.h; sourceTree = "<group>"; };
+		2A45D020201AD4D400FE2BF3 /* AutoBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoBannerView.m; sourceTree = "<group>"; };
+		2A45D027201B213E00FE2BF3 /* AutoBannerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoBannerCell.h; sourceTree = "<group>"; };
+		2A45D028201B213E00FE2BF3 /* AutoBannerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoBannerCell.m; sourceTree = "<group>"; };
+		2A45D02D201B3CF500FE2BF3 /* AutoBannerLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoBannerLayout.h; sourceTree = "<group>"; };
+		2A45D02E201B3CF500FE2BF3 /* AutoBannerLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoBannerLayout.m; sourceTree = "<group>"; };
 		2A6AA2FD2019CF7900810988 /* ZYBanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYBanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6AA3002019CF7900810988 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A6AA3012019CF7900810988 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +67,7 @@
 		2A6AA2FF2019CF7900810988 /* ZYBanner */ = {
 			isa = PBXGroup;
 			children = (
+				2A6AA3162019CF8D00810988 /* ZYBanner */,
 				2A6AA3002019CF7900810988 /* AppDelegate.h */,
 				2A6AA3012019CF7900810988 /* AppDelegate.m */,
 				2A6AA3032019CF7900810988 /* ViewController.h */,
@@ -67,6 +77,19 @@
 				2A6AA30B2019CF7900810988 /* LaunchScreen.storyboard */,
 				2A6AA30E2019CF7900810988 /* Info.plist */,
 				2A6AA30F2019CF7900810988 /* main.m */,
+			);
+			path = ZYBanner;
+			sourceTree = "<group>";
+		};
+		2A6AA3162019CF8D00810988 /* ZYBanner */ = {
+			isa = PBXGroup;
+			children = (
+				2A45D01F201AD4D400FE2BF3 /* AutoBannerView.h */,
+				2A45D020201AD4D400FE2BF3 /* AutoBannerView.m */,
+				2A45D027201B213E00FE2BF3 /* AutoBannerCell.h */,
+				2A45D028201B213E00FE2BF3 /* AutoBannerCell.m */,
+				2A45D02D201B3CF500FE2BF3 /* AutoBannerLayout.h */,
+				2A45D02E201B3CF500FE2BF3 /* AutoBannerLayout.m */,
 			);
 			path = ZYBanner;
 			sourceTree = "<group>";
@@ -143,7 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A6AA3052019CF7900810988 /* ViewController.m in Sources */,
+				2A45D021201AD4D400FE2BF3 /* AutoBannerView.m in Sources */,
+				2A45D029201B213E00FE2BF3 /* AutoBannerCell.m in Sources */,
 				2A6AA3102019CF7900810988 /* main.m in Sources */,
+				2A45D02F201B3CF500FE2BF3 /* AutoBannerLayout.m in Sources */,
 				2A6AA3022019CF7900810988 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
