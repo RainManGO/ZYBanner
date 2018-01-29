@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16D8CF240F26E62FA16E87B9 /* libPods-ZYBanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E74E61DFC2126F5E1F5385 /* libPods-ZYBanner.a */; };
+		2A3A2AC8201ECA3E00547366 /* AutoBannerCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A2AC7201ECA3E00547366 /* AutoBannerCache.m */; };
 		2A45D021201AD4D400FE2BF3 /* AutoBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A45D020201AD4D400FE2BF3 /* AutoBannerView.m */; };
 		2A45D029201B213E00FE2BF3 /* AutoBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A45D028201B213E00FE2BF3 /* AutoBannerCell.m */; };
 		2A45D02F201B3CF500FE2BF3 /* AutoBannerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A45D02E201B3CF500FE2BF3 /* AutoBannerLayout.m */; };
@@ -19,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A3A2AC6201ECA3E00547366 /* AutoBannerCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoBannerCache.h; sourceTree = "<group>"; };
+		2A3A2AC7201ECA3E00547366 /* AutoBannerCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoBannerCache.m; sourceTree = "<group>"; };
+		2A3A2AC9201F0AED00547366 /* app.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = app.pch; sourceTree = "<group>"; };
 		2A45D01F201AD4D400FE2BF3 /* AutoBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoBannerView.h; sourceTree = "<group>"; };
 		2A45D020201AD4D400FE2BF3 /* AutoBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoBannerView.m; sourceTree = "<group>"; };
 		2A45D027201B213E00FE2BF3 /* AutoBannerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoBannerCell.h; sourceTree = "<group>"; };
@@ -35,6 +40,9 @@
 		2A6AA30C2019CF7900810988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A6AA30E2019CF7900810988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A6AA30F2019CF7900810988 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5E74E61DFC2126F5E1F5385 /* libPods-ZYBanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZYBanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0BD1CF608D4DA4966C7475 /* Pods-ZYBanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYBanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYBanner/Pods-ZYBanner.release.xcconfig"; sourceTree = "<group>"; };
+		F86ACB4FAFCA560EDD627C16 /* Pods-ZYBanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYBanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYBanner/Pods-ZYBanner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +50,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16D8CF240F26E62FA16E87B9 /* libPods-ZYBanner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00E87D3E322B257C3672285F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F86ACB4FAFCA560EDD627C16 /* Pods-ZYBanner.debug.xcconfig */,
+				CD0BD1CF608D4DA4966C7475 /* Pods-ZYBanner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2A3A2AC4201EC9CD00547366 /* BannerView */ = {
+			isa = PBXGroup;
+			children = (
+				2A45D01F201AD4D400FE2BF3 /* AutoBannerView.h */,
+				2A45D020201AD4D400FE2BF3 /* AutoBannerView.m */,
+				2A45D027201B213E00FE2BF3 /* AutoBannerCell.h */,
+				2A45D028201B213E00FE2BF3 /* AutoBannerCell.m */,
+				2A45D02D201B3CF500FE2BF3 /* AutoBannerLayout.h */,
+				2A45D02E201B3CF500FE2BF3 /* AutoBannerLayout.m */,
+			);
+			path = BannerView;
+			sourceTree = "<group>";
+		};
+		2A3A2AC5201EC9F100547366 /* BannerCache */ = {
+			isa = PBXGroup;
+			children = (
+				2A3A2AC6201ECA3E00547366 /* AutoBannerCache.h */,
+				2A3A2AC7201ECA3E00547366 /* AutoBannerCache.m */,
+			);
+			path = BannerCache;
+			sourceTree = "<group>";
+		};
 		2A6AA2F42019CF7800810988 = {
 			isa = PBXGroup;
 			children = (
 				2A6AA2FF2019CF7900810988 /* ZYBanner */,
 				2A6AA2FE2019CF7900810988 /* Products */,
+				00E87D3E322B257C3672285F /* Pods */,
+				5F23889967BFCE47E567ECA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +119,7 @@
 				2A6AA30B2019CF7900810988 /* LaunchScreen.storyboard */,
 				2A6AA30E2019CF7900810988 /* Info.plist */,
 				2A6AA30F2019CF7900810988 /* main.m */,
+				2A3A2AC9201F0AED00547366 /* app.pch */,
 			);
 			path = ZYBanner;
 			sourceTree = "<group>";
@@ -84,14 +127,18 @@
 		2A6AA3162019CF8D00810988 /* ZYBanner */ = {
 			isa = PBXGroup;
 			children = (
-				2A45D01F201AD4D400FE2BF3 /* AutoBannerView.h */,
-				2A45D020201AD4D400FE2BF3 /* AutoBannerView.m */,
-				2A45D027201B213E00FE2BF3 /* AutoBannerCell.h */,
-				2A45D028201B213E00FE2BF3 /* AutoBannerCell.m */,
-				2A45D02D201B3CF500FE2BF3 /* AutoBannerLayout.h */,
-				2A45D02E201B3CF500FE2BF3 /* AutoBannerLayout.m */,
+				2A3A2AC5201EC9F100547366 /* BannerCache */,
+				2A3A2AC4201EC9CD00547366 /* BannerView */,
 			);
 			path = ZYBanner;
+			sourceTree = "<group>";
+		};
+		5F23889967BFCE47E567ECA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5E74E61DFC2126F5E1F5385 /* libPods-ZYBanner.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,9 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A6AA3132019CF7900810988 /* Build configuration list for PBXNativeTarget "ZYBanner" */;
 			buildPhases = (
+				DFC878BF10D62EEDCFA27A85 /* [CP] Check Pods Manifest.lock */,
 				2A6AA2F92019CF7900810988 /* Sources */,
 				2A6AA2FA2019CF7900810988 /* Frameworks */,
 				2A6AA2FB2019CF7900810988 /* Resources */,
+				8A40D19B4ABFB573D8AAEE00 /* [CP] Embed Pods Frameworks */,
+				13D62E1B31AF10F4B3AB2E3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,11 +210,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13D62E1B31AF10F4B3AB2E3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZYBanner/Pods-ZYBanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A40D19B4ABFB573D8AAEE00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZYBanner/Pods-ZYBanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFC878BF10D62EEDCFA27A85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZYBanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2A6AA2F92019CF7900810988 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A3A2AC8201ECA3E00547366 /* AutoBannerCache.m in Sources */,
 				2A6AA3052019CF7900810988 /* ViewController.m in Sources */,
 				2A45D021201AD4D400FE2BF3 /* AutoBannerView.m in Sources */,
 				2A45D029201B213E00FE2BF3 /* AutoBannerCell.m in Sources */,
@@ -302,10 +404,12 @@
 		};
 		2A6AA3142019CF7900810988 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F86ACB4FAFCA560EDD627C16 /* Pods-ZYBanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XB9YNJTZ2K;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZYbanner/app.pch";
 				INFOPLIST_FILE = ZYBanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZY.ZYBanner;
@@ -316,10 +420,12 @@
 		};
 		2A6AA3152019CF7900810988 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD0BD1CF608D4DA4966C7475 /* Pods-ZYBanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XB9YNJTZ2K;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZYbanner/app.pch";
 				INFOPLIST_FILE = ZYBanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZY.ZYBanner;

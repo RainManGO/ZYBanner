@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "AutoBannerView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *testImageV;
 
 @end
 
@@ -16,9 +18,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self sampleCode];
 }
 
+//示例代码 加载onlyImageBanner
+-(void)sampleCode{
+    AutoBannerView * banner =  [[AutoBannerView alloc]initWithFrame:CGRectMake(0,64,kScreenWidth, 200)];
+//    banner.minimumLineSpacing=100;
+//    banner.itemSize=CGSizeMake(kScreenWidth-20, 100);
+
+    banner.olnyImageDataSorce =  @[@"banner1.jpg",@"banner2.jpg",@"banner3.jpg",@"banner4.jpeg"];
+    [banner showInView:self.view];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

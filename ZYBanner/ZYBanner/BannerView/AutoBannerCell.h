@@ -10,4 +10,9 @@
 
 @interface AutoBannerCell : UICollectionViewCell
 
+@property(nonatomic,strong)UIImageView * BannerImage;
+
+
+#pragma  mark  显示数据
+-(void)showCellWithImage:(NSString *)imageName;
 @end

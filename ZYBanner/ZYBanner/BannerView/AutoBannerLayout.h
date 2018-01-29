@@ -13,11 +13,11 @@
 @end
 
 
-@interface LineLayout : UICollectionViewFlowLayout
+@interface LineLayout : AutoBannerLayout
 
 @end
 
 
-@interface CardLayout : UICollectionViewFlowLayout
+@interface CardLayout : AutoBannerLayout
 
 @end
